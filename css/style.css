@@ -503,6 +503,15 @@ img.img-fluid.service {
 
 /*  End About Us*/
 
+/*  Start finance Us*/
+
+.bg-header-f {
+    background: linear-gradient(rgba(9, 30, 62, 0.438), rgba(9, 30, 62, 0.349)), url(../img//misrtravel/finance-business-accounting-analysis-management-concept.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+/*  End finance Us*/
+
 /*** Start Team ***/
 .team-item {
     transition: .5s;
