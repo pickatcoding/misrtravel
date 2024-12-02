@@ -480,10 +480,8 @@ p {
     font-weight: 200;
 }
 /* End Banner*/
+
 /* start video*/
-
-
-
 /* End  video*/
 
 /* Start Service */
@@ -499,7 +497,7 @@ img.img-fluid.service {
 /*  Start About Us*/
 
 .bg-header {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img//misrtravel/bg-images.jpg) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, 0.24), rgba(9, 30, 62, 0.205)), url(../img//misrtravel/beautiful-sunset-its-reflection-water_181624-20266.avif) center center no-repeat;
     background-size: cover;
 }
 
