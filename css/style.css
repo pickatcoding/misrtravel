@@ -406,7 +406,7 @@
         }
 
         .graph tbody:after {
-            content: "40.000-";
+            content: "-40.000";
             bottom: -0.6em;
             font-size: 15px;
         }
