@@ -341,156 +341,295 @@
 
 /*------------ Start Chart--------------*/
 
-.graph {
-    margin-bottom: 1em;
-    font: normal 100%/150% arial, helvetica, sans-serif;
+.base {
+    position: absolute;
+    bottom: 0;
+    left: -35px;
+    width: 950px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    -moz-transform: skew(45deg);
+    -o-transform: skew(45deg);
+    -webkit-transform: skew(45deg);
 }
 
-.graph caption {
-    font: bold 150%/120% arial, helvetica, sans-serif;
-    padding-bottom: 0.33em;
+.chart-container {
+    position: relative;
+    z-index: 0;
+    margin: 100px auto 0;
+    width: 700px;
+    height: 860px;
+    /*border: solid 1px #bbb;*/
+    background-color: rgba(255, 255, 255, 0.055);
+    /*  -webkit-box-shadow: 0 8px 6px -6px #444;
+*/
 }
 
-.graph tbody th {
+.chart-container:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    height: 15px;
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.055);
+    -moz-transform: skew(45deg);
+    -o-transform: skew(45deg);
+    -webkit-transform: skew(45deg);
+    transform: skew(45deg);
+}
+
+.chart-container>table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+    background-color: #656565;
+}
+
+.chart-container table tr td {
+    width: 100px;
+    height: 98x;
+    border: solid 1px rgba(255, 255, 255, 0.05);
+
+}
+
+.meter {
+    position: relative;
+    top: 0px;
+    left: -30px;
+    height: 860px;
+    width: 30px;
+    background-color: rgba(20, 113, 163, 0.5);
+    border-left: solid 1px rgba(255, 255, 255, 0.5);
+
+}
+
+.meter:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -15px;
+    width: 15px;
+    height: 860px;
+    background-color: rgba(14, 81, 117, 0.9);
+    -moz-transform: skewY(45deg);
+    -o-transform: skewY(45deg);
+    -webkit-transform: skewY(45deg);
+    transform: skewY(45deg);
+}
+
+.meter:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    width: 30px;
+    height: 15px;
+    background-color: rgba(13, 171, 217, 0.45);
+    -moz-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
+}
+
+.meter li {
+    position: relative;
+    list-style-type: none;
+    height: 99px;
+    border-bottom: solid 1px #0DABD9;
+}
+
+.meter li:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    width: 30px;
+    height: 100%;
+    border-bottom: solid 1px #0DABD9;
+    -moz-transform: skewY(45deg);
+    -o-transform: skewY(45deg);
+    -webkit-transform: skewY(45deg);
+    transform: skewY(45deg);
+}
+
+.meter li:last-child {
+    border-bottom: none;
+}
+
+.meter li:last-child:before {
+    border: 0;
+}
+
+.meter li div {
+    position: absolute;
+    left: -130px;
+    top: 0;
+    padding: 55px 0 0;
+    width: 80px;
+    color: #656565;
     text-align: right;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
 
-@supports (display:grid) {
 
-    @media (min-width:32em) {
+/* ---------------------
+  Vertical Bars
+----------------------*/
 
-        .graph {
-            display: block;
-            width: 600px;
-            height: 300px;
-        }
-
-        .graph caption {
-            display: block;
-        }
-
-        .graph thead {
-            display: none;
-        } 
-
-        .graph tbody {
-            position: relative;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(2em, 1fr));
-            column-gap: 2.5%;
-            align-items: end;
-            height: 100%;
-            margin: 3em 0 1em 2.8em;
-            padding: 0 1em;
-            border-bottom: 2px solid rgba(0, 0, 0, 0.5);
-            background: repeating-linear-gradient(180deg,
-                    rgba(170, 170, 170, 0.7) 0,
-                    rgba(170, 170, 170, 0.7) 1px,
-                    transparent 1px,
-                    transparent 20%);
-        }
-
-        .graph tbody:before,
-        .graph tbody:after {
-            position: absolute;
-            left: -3.2em;
-            width: 2.8em;
-            text-align: right;
-            font: bold 80%/120% arial, helvetica, sans-serif;
-        }
-
-        .graph tbody:before {
-            content: "140.000";
-            top: -0.6em;
-            font-size: 15px;
-        }
-
-        .graph tbody:after {
-            content: "-40.000";
-            bottom: -0.6em;
-            font-size: 15px;
-        }
-
-        .graph tr {
-            position: relative;
-            display: block;
-        }
-
-        .graph tr:hover {
-            z-index: 999;
-        }
-
-        .graph th,
-        .graph td {
-            display: block;
-            text-align: center;
-        }
-
-        .graph tbody th {
-            position: absolute;
-            top: -3em;
-            left: 0;
-            width: 100%;
-            font-weight: normal;
-            text-align: center;
-            white-space: nowrap;
-            text-indent: 0;
-            transform: rotate(-45deg);
-        }
-
-        .graph tbody th:after {
-            content: "";
-        }
-
-        .graph td {
-            width: 100%;
-            height: 100%;
-            background: #F63;
-            border-radius: 0.5em 0.5em 0 0;
-            transition: background 0.5s;
-        }
-
-        .graph tr:hover td {
-            opacity: 0.7;
-        }
-
-        .graph td span {
-            overflow: hidden;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 0;
-            padding: 0.5em 0;
-            margin: -1em 0 0;
-            font: normal 85%/120% arial, helvetica, sans-serif;
-            /* 			background:white; */
-            /* 			box-shadow:0 0 0.25em rgba(0,0,0,0.6); */
-            font-weight: bold;
-            opacity: 0;
-            transition: opacity 0.5s;
-            color: white;
-        }
-
-        .toggleGraph:checked+table td span,
-        .graph tr:hover td span {
-            width: 4em;
-            margin-left: -2em;
-            /* 1/2 the declared width */
-            opacity: 1;
-        }
-
-
-
-
-
-
-    }
-
-    /* min-width:32em */
-
+.bar {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    height: 35%;
+    width: 40px;
+    margin: 0 40px;
+    background-color: rgba(107, 255, 49, 0.35);
 }
 
-/* grid only */
+.bar:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 7px;
+    height: 100%;
+    width: 15px;
+    background-color: rgba(107, 255, 49, 0.25);
+    -webkit-transform: skewY(45deg);
+}
+
+.bar:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    width: 40px;
+    height: 15px;
+    background-color: rgba(107, 255, 49, 0.45);
+    -moz-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
+}
+
+.one {
+    color: #ffff;
+    background-color: rgba(33, 19, 231, 0.253);
+    height: 25%;
+}
+
+.one:before {
+    background-color: rgba(94, 49, 255, 0.473);
+}
+
+.one:after {
+    background-color: rgba(94, 49, 255, 0.521);
+}
+
+.two {
+    color: #ffff;
+    background-color: rgba(231, 19, 19, 0.829);
+    left: 12.5%;
+    height: 3%;
+    width: 55px;
+}
+
+.two:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 7px;
+    height: 100%;
+    width: 15px;
+    background-color: rgba(231, 19, 19, 0.829);
+    -webkit-transform: skewY(45deg);
+}
+
+.two:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    width: 55px;
+    height: 15px;
+    background-color: rgba(231, 19, 19, 0.829);
+    -moz-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
+}
+
+.three {
+    color: #ffff;
+    background-color: rgba(107, 255, 49, 0.45);
+    left: 25%;
+    height: 30%;
+    width: 50px;
+}
+
+.three:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 7px;
+    height: 100%;
+    width: 15px;
+    background-color: rgba(107, 255, 49, 0.45);
+    -webkit-transform: skewY(45deg);
+}
+
+.three:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    width: 50px;
+    height: 15px;
+    background-color: rgba(107, 255, 49, 0.45);
+    -moz-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
+}
+
+.four {
+    left: 37.5%;
+    height: 35%;
+}
+
+.five {
+    left: 50%;
+    height: 63%;
+}
+
+.six {
+    left: 62.5%;
+    height: 45%;
+}
+
+.seven {
+    left: 75%;
+    height: 15%;
+}
+
+.eight {
+    left: 87.5%;
+    height: 32%;
+}
+
+.date-one{
+    position: absolute;
+    left: 15px;
+   font-weight: bold;
+}
+
 
 /*------------ End Chart--------------*/
 
@@ -506,98 +645,6 @@ p {
     /*justify-content: end; */
      align-items: end; 
 }
-
-/* 
----------------------------------------------
- Start Banner
---------------------------------------------- 
-*/
-/*
-.main-banner {
-    position: relative;
-    max-height: 100%;
-    overflow: hidden;
-    margin-bottom: -7px;
-}
-
-#bg-video {
-    min-width: 100%;
-    min-height: 100vh;
-    max-width: 100%;
-    max-height: 100vh;
-    object-fit: fill;
-    z-index: -1;
-    width: 100%;
-    height: auto;
-}
-
-#bg-video::-webkit-media-controls {
-    display: none !important;
-}
-
-.video-overlay {
-    position: absolute;
-    background-color: rgba(31, 39, 43, 0.75);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-}
-
-.main-banner .caption {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.main-banner .caption h6 {
-    margin-top: 0px;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 1px;
-}
-
-.main-banner .caption h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: #fff;
-    letter-spacing: 1px;
-}
-
-.main-banner .caption h2 em {
-    font-style: normal;
-    color: #f5a425;
-    font-weight: 900;
-}
-
-.main-banner .caption p {
-    color: #fff;
-    font-size: 14px;
-    max-width: 570px;
-}
-
-.main-banner .caption .main-button-red {
-    margin-top: 30px;
-}
-
-@media screen and (max-width: 767px) {
-
-    .main-banner .caption h6 {
-        font-weight: 500;
-    }
-
-    .main-banner .caption h2 {
-        font-size: 36px;
-    }
-
-}
-/*
 
 /* 
 ---------------------------------------------
@@ -749,10 +796,11 @@ th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    text-align: center;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #4e4e4e;
 }
 /* finance */
 

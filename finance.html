@@ -214,39 +214,46 @@
                 <table class="table-primary">
                 <table>
                     <tr>
-                        <th>Company</th>
-                        <th>Contact</th>
-                        <th>Country</th>
+                        <th>العام المالى</th>
+                        <th>اجمالى الايرادات</th>
+                        <th>اجمالى المصروفات</th>
+                        <th>صافى الربح</th>
+                        <th>نسبة القائض لايراد</th>
                     </tr>
                     <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Maria Anders</td>
-                        <td>Germany</td>
+                        <td>2019/2020</td>
+                        <td>389,772</td>
+                        <td>684,066</td>
+                        <td>5,706</td>
+                        <td>0.83%</td>
+                    </tr>
+                    <tr style="color: #e71717;">
+                        <td>2021/2022</td>
+                        <td>304,131</td>
+                        <td>356,607</td>
+                        <td>28,084</td>
+                        <td style="direction: ltr;">-17.25%</td>
                     </tr>
                     <tr>
-                        <td>Centro comercial Moctezuma</td>
-                        <td>Francisco Chang</td>
-                        <td>Mexico</td>
+                        <td>2022/2021</td>
+                        <td>637,050</td>
+                        <td>608,966</td>
+                        <td>28,084</td>
+                        <td>4.41%</td>
                     </tr>
                     <tr>
-                        <td>Ernst Handel</td>
-                        <td>Roland Mendel</td>
-                        <td>Austria</td>
+                        <td>2023/2022</td>
+                        <td>1,104,407</td>
+                        <td>1,023,599</td>
+                        <td>80,808</td>
+                        <td>7.32%</td>
                     </tr>
                     <tr>
-                        <td>Island Trading</td>
-                        <td>Helen Bennett</td>
-                        <td>UK</td>
-                    </tr>
-                    <tr>
-                        <td>Laughing Bacchus Winecellars</td>
-                        <td>Yoshi Tannamuri</td>
-                        <td>Canada</td>
-                    </tr>
-                    <tr>
-                        <td>Magazzini Alimentari Riuniti</td>
-                        <td>Giovanni Rovelli</td>
-                        <td>Italy</td>
+                        <td>2024/2023</td>
+                        <td>1,341,012</td>
+                        <td>1,217,859</td>
+                        <td>123,153</td>
+                        <td>9.18%</td>
                     </tr>
                 </table>
                 </p>
@@ -260,65 +267,117 @@
 
     <!-- Start chart finance -->
 
-    <div class="container-fluid training overflow-hidden bg-light py-5" style="direction: ltr;">
-        <div class="container py-5">
+    <div class="container-fluid training overflow-hidden bg-light py-0" style="direction: ltr;">
+        <div class="container py-0">
             <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="sub-style">
                     <h2 class="sub-title text-primary px-3"> تطور صافي الربح </h2>
                 </div>
                 <h1 class="display-5 mb-4 py-3"> عن الفترة من 2019-2020 حتى 2023-2024 </h1>
-                <p class="mb-0">
-                    
-                    <table class="section-title text-center mb-5 wow fadeInUp graph" data-wow-delay="0.1s">
-                        <caption>Bar Chart HTML From HTML Table</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Item</th>
-                                <th scope="col">Percent</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="height:85%">
-                                <th scope="row">2019/2020</th>
-                                <td><span>5706</span></td>
-                            </tr>
-                            <tr style="height:23%">
-                                <th scope="row">Medium</th>
-                                <td><span>23%</span></td>
-                            </tr>
-                            <tr style="height:7%">
-                                <th scope="row">Tumblr</th>
-                                <td><span>7%</span></td>
-                            </tr>
-                            <tr style="height:38%">
-                                <th scope="row">Facebook</th>
-                                <td><span>38%</span></td>
-                            </tr>
-                            <tr style="height:35%">
-                                <th scope="row">Youtube</th>
-                                <td><span>35%</span></td>
-                            </tr>
-                            <tr style="height:30%">
-                                <th scope="row">LinkedIn</th>
-                                <td><span>30%</span></td>
-                            </tr>
-                            <tr style="height:5%">
-                                <th scope="row">Twitter</th>
-                                <td><span>5%</span></td>
-                            </tr>
-                            <tr style="height:20%">
-                                <th scope="row">Other</th>
-                                <td><span>20%</span></td>
-                            </tr>
-                        </tbody>
+                
+                <h4>Transparent CSS Only Bar Graph</h4>
+                <div class="chart-container" style="direction: ltr;background-color: #585858ad;">
+                    <div class="base"></div>
+                    <!-- Left Side Meter-->
+                    <ul class="meter">
+                        <li>
+                            <div>140,000</div>
+                        </li>
+                        <li>
+                            <div>120,000</div>
+                        </li>
+                        <li>
+                            <div>100,000</div>
+                        </li>
+                        <li>
+                            <div>80,000</div>
+                        </li>
+                        <li>
+                            <div>60,000</div>
+                        </li>
+                        <li>
+                            <div>40,000</div>
+                        </li>
+                        <li>
+                            <div>20,000</div>
+                        </li>
+                        <li>
+                            <div>-20,000</div>
+                        </li>
+                        <li>
+                            <div>-40,000</div>
+                        </li>
+                    </ul>
+                    <!-- Background-Grid -->
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </table>
-
-                </p>
-            </div>
+                    <!-- End Background Grid -->
+                
+                    <div class="bar one">5,706 </div>
+                    <span class="date-one">2020/2019</span>
+                    <div class="bar two">-52,476</div>
+                    <span class="date-two">2021/2020</span>
+                    <div class="bar three">28,084</div>
+                    <span class="date-three">2022/2021</span>
+                    <div class="bar four">80,808</div>
+                    <span class="date-four">2023/2022</span>
+                    <div class="bar five">123,153</div>
+                    <span class="date-five">2023/2022</span>
+                </div>
     
+            </div>
         </div>
     </div>
-
     <!-- End chart finance -->
 
 
