@@ -391,7 +391,7 @@
 
 .chart-container table tr td {
     width: 100px;
-    height: 98x;
+    height: 98px;
     border: solid 1px rgba(255, 255, 255, 0.05);
 
 }
@@ -522,6 +522,7 @@
 .one {
     color: #ffff;
     background-color: rgba(33, 19, 231, 0.253);
+    left: 10%;
     height: 25%;
 }
 
@@ -536,7 +537,7 @@
 .two {
     color: #ffff;
     background-color: rgba(231, 19, 19, 0.829);
-    left: 12.5%;
+    left: 22.5%;
     height: 3%;
     width: 55px;
 }
@@ -569,7 +570,7 @@
 .three {
     color: #ffff;
     background-color: rgba(107, 255, 49, 0.45);
-    left: 25%;
+    left: 42%;
     height: 30%;
     width: 50px;
 }
@@ -600,28 +601,69 @@
 }
 
 .four {
-    left: 37.5%;
-    height: 35%;
+    color: #ffff;
+    background-color: rgba(79, 231, 19, 0.774);
+    left: 60.5%;
+    height: 62%;
+    width: 50px;
+}
+
+.four:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 7px;
+    height: 100%;
+    width: 15px;
+    background-color: rgba(79, 231, 19, 0.774);
+    -webkit-transform: skewY(45deg);
+}
+
+.four:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    width: 50px;
+    height: 15px;
+    background-color: rgba(79, 231, 19, 0.774);
+    -moz-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
 }
 
 .five {
-    left: 50%;
-    height: 63%;
+    color: #ffff;
+    background-color: rgba(27, 90, 2, 0.959);
+    left: 80%;
+    height: 85%;
+    width: 55px;
 }
 
-.six {
-    left: 62.5%;
-    height: 45%;
+.five:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 7px;
+    height: 100%;
+    width: 15px;
+    background-color: rgba(27, 90, 2, 0.959);
+    -webkit-transform: skewY(45deg);
 }
 
-.seven {
-    left: 75%;
-    height: 15%;
-}
-
-.eight {
-    left: 87.5%;
-    height: 32%;
+.five:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    width: 55px;
+    height: 15px;
+    background-color: rgba(27, 90, 2, 0.959);
+    -moz-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
 }
 
 .date-one{
