@@ -4179,12 +4179,10 @@ fieldset:disabled .btn {
     clear: both;
     font-weight: 400;
     color: #212529;
-    text-align:  right;
+    text-align: inherit;
     white-space: nowrap;
     background-color: rgba(0, 0, 0, 0);
-    border: 0;
-    border: 1px solid #33333317;
-    border-radius: 5px;
+    border: 0
 }
 
 .dropdown-item:hover,

@@ -337,355 +337,6 @@
 
 /************ Start Misr Travel ***********/
 
-
-
-/*------------ Start Chart--------------*/
-
-.base {
-    position: absolute;
-    bottom: 0;
-    left: -35px;
-    width: 950px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.05) !important;
-    -moz-transform: skew(45deg);
-    -o-transform: skew(45deg);
-    -webkit-transform: skew(45deg);
-}
-
-.chart-container {
-    position: relative;
-    z-index: 0;
-    margin: 15px auto 0;
-    width: 100%;
-    height: 470px;
-    /*border: solid 1px #bbb;*/
-    background-color: rgba(255, 255, 255, 0.055);
-    /*  -webkit-box-shadow: 0 8px 6px -6px #444;
-*/
-}
-
-.chart-container:after {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -8px;
-    height: 15px;
-    width: 800px;
-    background-color: rgba(255, 255, 255, 0.055);
-    -moz-transform: skew(45deg);
-    -o-transform: skew(45deg);
-    -webkit-transform: skew(45deg);
-    transform: skew(45deg);
-}
-
-.chart-container>table {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -999;
-    width: 100%;
-    height: 100%;
-    background-color: #656565;
-}
-
-.chart-container table tr td {
-    width: 100px;
-    height: 98px;
-    border: solid 1px rgba(255, 255, 255, 0.05);
-
-}
-
-.meter {
-    position: relative;
-    top: 0px;
-    left: -30px;
-    height: 420px;
-    width: 30px;
-    background-color: rgba(20, 113, 163, 0.5);
-    border-left: solid 1px rgba(255, 255, 255, 0.5);
-
-}
-
-.meter:before {
-    content: "";
-    position: absolute;
-    top: -7px;
-    left: -15px;
-    width: 15px;
-    height: 420px;
-    background-color: rgba(14, 81, 117, 0.9);
-    -moz-transform: skewY(45deg);
-    -o-transform: skewY(45deg);
-    -webkit-transform: skewY(45deg);
-    transform: skewY(45deg);
-}
-
-.meter:after {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -8px;
-    width: 30px;
-    height: 15px;
-    background-color: rgba(13, 171, 217, 0.45);
-    -moz-transform: skewX(45deg);
-    -o-transform: skewX(45deg);
-    -webkit-transform: skewX(45deg);
-    transform: skewX(45deg);
-}
-
-.meter li {
-    position: relative;
-    list-style-type: none;
-    height: 50px;
-    border-bottom: solid 1px #0DABD9;
-}
-
-.meter li:before {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -30px;
-    width: 30px;
-    height: 100%;
-    border-bottom: solid 1px #0DABD9;
-    -moz-transform: skewY(45deg);
-    -o-transform: skewY(45deg);
-    -webkit-transform: skewY(45deg);
-    transform: skewY(45deg);
-}
-
-.meter li:last-child {
-    border-bottom: none;
-}
-
-.meter li:last-child:before {
-    border: 0;
-}
-
-.meter li div {
-    position: absolute;
-    left: -130px;
-    top: -50px;
-    padding: 55px 0 0;
-    width: 80px;
-    color: #656565;
-    text-align: right;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-}
-
-
-/* ---------------------
-  Vertical Bars
-----------------------*/
-
-.bar {
-    float: left;
-    position: absolute;
-    bottom: 0;
-    z-index: 99;
-    height: 35%;
-    width: 40px;
-    margin: 0 40px;
-    background-color: rgba(107, 255, 49, 0.35);
-}
-
-.bar:before {
-    content: "";
-    position: absolute;
-    left: -15px;
-    bottom: 7px;
-    height: 100%;
-    width: 15px;
-    background-color: rgba(107, 255, 49, 0.25);
-    -webkit-transform: skewY(45deg);
-}
-
-.bar:after {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -8px;
-    width: 40px;
-    height: 15px;
-    background-color: rgba(107, 255, 49, 0.45);
-    -moz-transform: skewX(45deg);
-    -o-transform: skewX(45deg);
-    -webkit-transform: skewX(45deg);
-    transform: skewX(45deg);
-}
-
-.one {
-    color: #ffff;
-    background-color: rgba(33, 19, 231, 0.253);
-    left: 10%;
-    height: 25%;
-    position: absolute;
-    bottom: 45px;
-}
-
-.one:before {
-    background-color: rgba(94, 49, 255, 0.473);
-}
-
-.one:after {
-    background-color: rgba(94, 49, 255, 0.521);
-}
-
-.two {
-    color: #ffff;
-    background-color: rgba(231, 19, 19, 0.829);
-    left: 22.5%;
-    height: 3%;
-    width: 55px;
-    position: absolute;
-    bottom: 45px;
-}
-
-.two:before {
-    content: "";
-    position: absolute;
-    left: -15px;
-    bottom: 7px;
-    height: 100%;
-    width: 15px;
-    background-color: rgba(231, 19, 19, 0.829);
-    -webkit-transform: skewY(45deg);
-}
-
-.two:after {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -8px;
-    width: 55px;
-    height: 15px;
-    background-color: rgba(231, 19, 19, 0.829);
-    -moz-transform: skewX(45deg);
-    -o-transform: skewX(45deg);
-    -webkit-transform: skewX(45deg);
-    transform: skewX(45deg);
-}
-
-.three {
-    position: absolute;
-    bottom: 45px;
-    color: #ffff;
-    background-color: rgba(107, 255, 49, 0.45);
-    left: 42%;
-    height: 30%;
-    width: 50px;
-
-}
-
-.three:before {
-    content: "";
-    position: absolute;
-    left: -15px;
-    bottom: 7px;
-    height: 100%;
-    width: 15px;
-    background-color: rgba(107, 255, 49, 0.45);
-    -webkit-transform: skewY(45deg);
-}
-
-.three:after {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -8px;
-    width: 50px;
-    height: 15px;
-    background-color: rgba(107, 255, 49, 0.45);
-    -moz-transform: skewX(45deg);
-    -o-transform: skewX(45deg);
-    -webkit-transform: skewX(45deg);
-    transform: skewX(45deg);
-}
-
-.four {
-    position: absolute;
-    bottom: 45px;
-    color: #ffff;
-    background-color: rgba(79, 231, 19, 0.774);
-    left: 60.5%;
-    height: 62%;
-    width: 50px;
-}
-
-.four:before {
-    content: "";
-    position: absolute;
-    left: -15px;
-    bottom: 7px;
-    height: 100%;
-    width: 15px;
-    background-color: rgba(79, 231, 19, 0.774);
-    -webkit-transform: skewY(45deg);
-}
-
-.four:after {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -8px;
-    width: 50px;
-    height: 15px;
-    background-color: rgba(79, 231, 19, 0.774);
-    -moz-transform: skewX(45deg);
-    -o-transform: skewX(45deg);
-    -webkit-transform: skewX(45deg);
-    transform: skewX(45deg);
-}
-
-.five {
-    position: absolute;
-    bottom: 45px;
-    color: #ffff;
-    background-color: rgba(27, 90, 2, 0.959);
-    left: 80%;
-    height: 85%;
-    width: 55px;
-}
-
-.five:before {
-    content: "";
-    position: absolute;
-    left: -15px;
-    bottom: 7px;
-    height: 100%;
-    width: 15px;
-    background-color: rgba(27, 90, 2, 0.959);
-    -webkit-transform: skewY(45deg);
-}
-
-.five:after {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -8px;
-    width: 55px;
-    height: 15px;
-    background-color: rgba(27, 90, 2, 0.959);
-    -moz-transform: skewX(45deg);
-    -o-transform: skewX(45deg);
-    -webkit-transform: skewX(45deg);
-    transform: skewX(45deg);
-}
-
-.date-one{
-    position: absolute;
-    left: 15px;
-   font-weight: bold;
-}
-
-
-/*------------ End Chart--------------*/
-
 p {
     direction: rtl;
     /* text-align: justify; */
@@ -836,6 +487,146 @@ img.img-fluid.service {
 }
 /* End Team */
 
+/*------------ Start Chart--------------*/
+
+.base {
+    position: absolute;
+    bottom: 0px;
+    left: -35px;
+    width: 950px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    -moz-transform: skew(45deg);
+    -o-transform: skew(45deg);
+    -webkit-transform: skew(45deg);
+}
+
+.chart-container {
+    position: relative;
+    z-index: 0;
+    margin: 15px auto 0;
+    width: 100%;
+    height: 420px;
+    /*border: solid 1px #bbb;*/
+    background-color: rgba(255, 255, 255, 0.055);
+    /*  -webkit-box-shadow: 0 8px 6px -6px #444;
+*/
+}
+
+.chart-container:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    height: 15px;
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.055);
+    -moz-transform: skew(45deg);
+    -o-transform: skew(45deg);
+    -webkit-transform: skew(45deg);
+    transform: skew(45deg);
+}
+
+.chart-container>table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+    background-color: #656565;
+}
+
+.chart-container table tr td {
+    width: 100px;
+    height: 98px;
+    border: solid 1px rgba(255, 255, 255, 0.05);
+
+}
+
+.meter {
+    position: relative;
+    top: 0px;
+    left: -30px;
+    height: 420px;
+    width: 30px;
+    background-color: rgba(20, 113, 163, 0.5);
+    border-left: solid 1px rgba(255, 255, 255, 0.5);
+
+}
+
+.meter:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -15px;
+    width: 15px;
+    height: 420px;
+    background-color: rgba(14, 81, 117, 0.9);
+    -moz-transform: skewY(45deg);
+    -o-transform: skewY(45deg);
+    -webkit-transform: skewY(45deg);
+    transform: skewY(45deg);
+}
+
+.meter:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    width: 30px;
+    height: 15px;
+    background-color: rgba(13, 171, 217, 0.45);
+    -moz-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
+}
+
+.meter li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    border-bottom: solid 1px #0DABD9;
+}
+
+.meter li:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    width: 30px;
+    height: 100%;
+    border-bottom: solid 1px #0DABD9;
+    -moz-transform: skewY(45deg);
+    -o-transform: skewY(45deg);
+    -webkit-transform: skewY(45deg);
+    transform: skewY(45deg);
+}
+
+.meter li:last-child {
+    border-bottom: none;
+}
+
+.meter li:last-child:before {
+    border: 0;
+}
+
+.meter li div {
+    position: absolute;
+    left: -130px;
+    top: -50px;
+    padding: 55px 0 0;
+    width: 80px;
+    color: #656565;
+    text-align: right;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+
 /* finance */
 
 table {
@@ -855,7 +646,276 @@ th {
 tr:nth-child(even) {
     background-color: #4e4e4e;
 }
+
 /* finance */
+
+/* ---------------------
+  Vertical Bars
+----------------------*/
+
+.bar {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    height: 35%;
+    width: 40px;
+    margin: 0 40px;
+    background-color: rgba(107, 255, 49, 0.35);
+}
+
+.bar:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 7px;
+    height: 100%;
+    width: 15px;
+    background-color: rgba(107, 255, 49, 0.25);
+    -webkit-transform: skewY(45deg);
+}
+
+.bar:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    width: 40px;
+    height: 15px;
+    background-color: rgba(107, 255, 49, 0.45);
+    -moz-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
+}
+
+.one {
+    position: absolute;
+    bottom: 20px;
+    color: #ffff;
+    background-color: rgba(33, 19, 231, 0.253);
+    left: 7%;
+    height: 25%;
+}
+
+.one:before {
+    background-color: rgba(94, 49, 255, 0.473);
+}
+
+.one:after {
+    background-color: rgba(94, 49, 255, 0.521);
+}
+
+.two {
+    position: absolute;
+    bottom: 7px;
+    color: #ffff;
+    background-color: rgba(231, 19, 19, 0.829);
+    left: 22.5%;
+    height: 3%;
+    width: 55px;
+}
+
+.two:before {
+    background-color: rgba(231, 19, 19, 0.829);
+}
+
+.two:after {
+    width: 55px;
+    background-color: rgba(231, 19, 19, 0.829);
+
+}
+
+.three {
+    position: absolute;
+    bottom: 20px;
+    color: #ffff;
+    background-color: rgba(107, 255, 49, 0.45);
+    left: 42%;
+    height: 30%;
+    width: 50px;
+
+}
+
+.three:before {
+    background-color: rgba(107, 255, 49, 0.45);
+}
+
+.three:after {
+    width: 50px;
+    background-color: rgba(107, 255, 49, 0.45);
+}
+
+.four {
+    position: absolute;
+    bottom: 20px;
+    color: #ffff;
+    background-color: rgba(79, 231, 19, 0.774);
+    left: 60.5%;
+    height: 62%;
+    width: 50px;
+}
+
+.four:before {
+    background-color: rgba(79, 231, 19, 0.774);
+}
+
+.four:after {
+    width: 50px;
+    background-color: rgba(79, 231, 19, 0.774);
+}
+
+.five {
+    position: absolute;
+    bottom: 20px;
+    color: #ffff;
+    background-color: rgba(27, 90, 2, 0.959);
+    left: 80%;
+    height: 85%;
+    width: 55px;
+}
+
+.five:before {
+    background-color: rgba(27, 90, 2, 0.959);
+}
+
+.five:after {
+    width: 55px;
+    background-color: rgba(27, 90, 2, 0.959);
+}
+
+.date-one {
+    position: absolute;
+    left: 75px;
+    font-weight: bold;
+}
+
+.date-two {
+    position: absolute;
+    left: 230px;
+    font-weight: bold;
+}
+
+.date-three {
+    position: absolute;
+    left: 410px;
+    font-weight: bold;
+}
+
+.date-four {
+    position: absolute;
+    left: 570px;
+    font-weight: bold;
+}
+
+.date-five {
+    position: absolute;
+    left: 755px;
+    font-weight: bold;
+}
+
+/*------------ End Chart--------------*/
+
+
+/*------------ Start Chart2--------------*/
+
+.one2 {
+    position: absolute;
+    bottom: 20px;
+    color: #ffff;
+    background-color: #A5A5A5;
+    left: 7%;
+    height: 30%;
+}
+
+.one2:before {
+    background-color: #A5A5A5;
+}
+
+.one2:after {
+    background-color: #A5A5A5;
+}
+
+.two2 {
+    position: absolute;
+    bottom: 7px;
+    color: #ffff;
+    background-color: #c5e0b491;
+    left: 22.5%;
+    height: 40%;
+    width: 55px;
+}
+
+.two2:before {
+    background-color: #c5e0b491;
+}
+
+.two2:after {
+    width: 55px;
+    background-color: #c5e0b491;
+
+}
+
+.three2 {
+    position: absolute;
+    bottom: 20px;
+    color: #ffff;
+    background-color: #A9D18E;
+    left: 42%;
+    height: 50%;
+    width: 50px;
+
+}
+
+.three2:before {
+    background-color: #A9D18E;
+}
+
+.three2:after {
+    width: 50px;
+    background-color: #A9D18E;
+}
+
+.four2 {
+    position: absolute;
+    bottom: 20px;
+    color: #ffff;
+    background-color: #548235;
+    left: 60.5%;
+    height: 60%;
+    width: 50px;
+}
+
+.four2:before {
+    background-color: #548235;
+}
+
+.four2:after {
+    width: 50px;
+    background-color: #548235;
+}
+
+.five2 {
+    position: absolute;
+    bottom: 20px;
+    color: #ffff;
+    background-color: #385723;
+    left: 80%;
+    height: 70%;
+    width: 55px;
+}
+
+.five2:before {
+    background-color: #385723;
+}
+
+.five2:after {
+    width: 55px;
+    background-color: #385723;
+}
+
+/*------------ End Chart2--------------*/
+
 
 /************ End Misr Travel ***********/
 
