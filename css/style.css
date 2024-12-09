@@ -409,17 +409,6 @@ img.img-fluid.service {
     background-size: cover;
 }
 
-/*  End About Us*/
-
-/*  Start finance Us*/
-
-.bg-header-f {
-    background: linear-gradient(rgba(9, 30, 62, 0.438), rgba(9, 30, 62, 0.349)), url(../img//misrtravel/finance-business-accounting-analysis-management-concept.jpg) center center no-repeat;
-    background-size: cover;
-}
-
-/*  End finance Us*/
-
 /*** Start Team ***/
 .team-item {
     transition: .5s;
@@ -445,7 +434,7 @@ img.img-fluid.service {
 }
 
 .team-item:hover {
-    box-shadow: 0 0 30px #DDDDDD;
+    box-shadow: 0 0 30px #5f5e5e3f;
 }
 
 .team-item:hover .team-social {
@@ -485,7 +474,23 @@ img.img-fluid.service {
 .blog-item:hover .blog-img img {
     transform: scale(1.15);
 }
+
 /* End Team */
+
+/*---------Start Log company-----------*/
+
+
+
+/*---------End Log company-----------*/
+
+/******  End About Us ******/
+
+/******  Start finance Us ******/
+
+.bg-header-f {
+    background: linear-gradient(rgba(9, 30, 62, 0.438), rgba(9, 30, 62, 0.349)), url(../img//misrtravel/finance-business-accounting-analysis-management-concept.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 /*------------ Start Chart--------------*/
 
@@ -915,6 +920,9 @@ tr:nth-child(even) {
 }
 
 /*------------ End Chart2--------------*/
+
+/*  End finance Us*/
+
 
 
 /************ End Misr Travel ***********/
