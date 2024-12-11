@@ -927,9 +927,9 @@ tr:nth-child(even) {
 /*-------------------------------------
         10. Blog
 --------------------------------------*/
-.blog {
+/*.blog {
     padding: 120px 0 90px;
-}
+}*/
 
 .blog-content {
     margin-top: 80px;
@@ -947,6 +947,7 @@ tr:nth-child(even) {
 
 .single-blog-item-txt {
     padding: 25px 28px 27px;
+    background-color: #FFFF;
 }
 
 /*.single-blog-item-txt h2 a {
