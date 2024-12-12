@@ -487,9 +487,13 @@ img.img-fluid.service {
 
 /******  Start finance Us ******/
 
-.bg-header-f {
-    background: linear-gradient(rgba(9, 30, 62, 0.438), rgba(9, 30, 62, 0.349)), url(../img//misrtravel/finance-business-accounting-analysis-management-concept.jpg) center center no-repeat;
+.bg-breadcrumb-f {
+    background: linear-gradient(rgba(0, 58, 102, 0.507), rgba(0, 58, 102, 0.486)), url(../img//misrtravel/finance-business-accounting-analysis-management-concept.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
     background-size: cover;
+    padding: 100px 0 60px 0;
 }
 
 /*------------ Start Chart--------------*/
@@ -995,6 +999,91 @@ a.post-by:hover {
     color: #c99f41;
 }
 /* End News */
+
+/*** Gallery Start ***/
+
+.bg-breadcrumb-h {
+    background: linear-gradient(rgba(0, 58, 102, 0.9), rgba(0, 58, 102, 0.247)), url(../img/misrtravel/romance/694A0593-scaled-e1711540859712.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: cover;
+    padding: 100px 0 60px 0;
+}
+
+.gallery .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery .gallery-item img {
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.gallery .gallery-item .gallery-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    transition: 0.5s;
+}
+
+.gallery .gallery-item .gallery-content .gallery-info {
+    position: relative;
+    margin-bottom: -100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.gallery .gallery-item .gallery-plus-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.gallery .gallery-item:hover .gallery-content .gallery-info,
+.gallery .gallery-item:hover .gallery-plus-icon {
+    opacity: 1;
+    margin: 0;
+}
+
+.gallery .gallery-item img {
+    transition: 0.5s;
+}
+
+.gallery .gallery-item:hover img {
+    transform: scale(1.2);
+}
+
+.gallery .gallery-item:hover .gallery-content {
+    background: rgba(19, 53, 123, 0.8);
+}
+
+.gallery .tab-class .nav-item {
+    padding: 0 0 20px 0;
+}
+
+.gallery .tab-class .nav-item a.active {
+    background: var(--bs-primary) !important;
+}
+
+.gallery .tab-class .nav-item a.active span {
+    color: var(--bs-white) !important;
+}
+
+/*** Gallery End ***/
 
 /************ End Misr Travel ***********/
 
